@@ -47,6 +47,15 @@ body {
     overflow-x: hidden;
 }
 
+/* Fondo sutil con degradados para toda la página */
+.landing-page,
+.portfolio-page {
+    background:
+        radial-gradient(900px 500px at 8% 0%, rgba(0, 102, 255, 0.06), transparent 60%),
+        radial-gradient(800px 480px at 92% 100%, rgba(0, 102, 255, 0.05), transparent 60%),
+        var(--secondary);
+}
+
 /* ============================================
    LANDING PAGE
    ============================================ */
@@ -67,7 +76,7 @@ body {
 .background-blur {
     position: fixed;
     border-radius: 50%;
-    opacity: 0.04;
+    opacity: 0.05;
     pointer-events: none;
     z-index: 0;
 }
@@ -124,6 +133,11 @@ body {
     50% {
         transform: translateY(40px);
     }
+}
+
+/* En móviles, hacer los círculos un poco más visibles */
+@media (max-width: 768px) {
+    .background-blur { opacity: 0.08; }
 }
 
 .landing-content {
