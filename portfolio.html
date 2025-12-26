@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Carmona - Mi Portfolio</title>
+    <link rel="stylesheet" href="style-landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconify CDN para iconos SVG de tecnologías -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body class="portfolio-page">
+    <!-- Navegación Superior -->
+    <nav class="top-nav">
+        <div class="nav-wrapper">
+            <a href="index.html" class="nav-logo">Sergio Carmona</a>
+            
+            <!-- Menú de secciones -->
+            <div class="nav-menu">
+                <a href="#about" class="nav-menu-link">Sobre Mí</a>
+                <a href="#education" class="nav-menu-link">Formación</a>
+                <a href="#projects" class="nav-menu-link">Proyectos</a>
+                <a href="#skills" class="nav-menu-link">Habilidades</a>
+                <a href="#contact" class="nav-menu-link">Contacto</a>
+            </div>
+
+            <div class="nav-spacer"></div>
+            <a href="index.html" class="nav-back">← Volver al inicio</a>
+        </div>
+    </nav>
+
+    <!-- Fondo animado minimalista -->
+    <div class="background-blur blur-1"></div>
+    <div class="background-blur blur-2"></div>
+    <div class="background-blur blur-3"></div>
+    <div class="background-blur blur-4"></div>
+    <div class="background-blur blur-5"></div>
+
+    <!-- Contenedor Principal -->
+    <div class="portfolio-container">
+
+        <!-- Sección: Sobre Mí -->
+        <section class="portfolio-section" id="about">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-wrapper">
+                    <div class="about-image">
+                        <img src="perfil.jpeg" alt="Sergio Carmona Povedano" class="about-photo">
+                    </div>
+                    
+                    <div class="about-text">
+                        <p class="section-text">
+                            Soy Sergio Carmona Povedano, estudiante de último curso de Ingeniería Informática, especializado en TI. Cuento con una base técnica sólida y facilidad para aprender nuevas herramientas por mi cuenta. Busco una oportunidad para empezar mi carrera, aportar valor desde el principio y desarrollarme dentro del sector tecnológico.
+                        </p>
+                        <p class="section-text">
+                            Me motiva trabajar en equipo, afrontar retos y mejorar continuamente. Disfruto creando soluciones útiles y aprendiendo tecnologías nuevas para aplicarlas en proyectos reales.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Proyectos Académicos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Tecnologías Dominadas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Motivación</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Formación -->
+        <section class="portfolio-section" id="education">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2 class="section-title">Formación Académica</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body">
+                            <h3 class="timeline-title">Educación secundaria obligatoria</h3>
+                            <p class="timeline-institution">Colegio Fuentelarreyna (Madrid)</p>
+                            <p class="timeline-date">Septiembre 2016 - Junio 2019</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body">
+                            <h3 class="timeline-title">Bachillerato de ciencias</h3>
+                            <p class="timeline-institution">IES Ciudad de los Poetas (Madrid)</p>
+                            <p class="timeline-date">Septiembre 2019 - Julio 2022</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body">
+                            <h3 class="timeline-title">Grado en Ingeniería Informática</h3>
+                            <p class="timeline-institution">Escuela Superior de Informática UCLM (Ciudad Real)</p>
+                            <p class="timeline-date">Septiembre 2022 - Actualidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Proyectos Destacados -->
+        <section class="portfolio-section" id="projects">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🎮</div>
+                            <h3 class="project-title">Juego Sokoban</h3>
+                        </div>
+                        <p class="project-description">
+                            Desarrollo de un juego clásico de puzzles utilizando programación orientada a objetos 
+                            y patrones de diseño avanzados.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">POO</span>
+                            <span class="tag">Git</span>
+                        </div>
+                        <a href="#" class="project-link">Ver en GitHub →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">📊</div>
+                            <h3 class="project-title">Sistema de Gestión</h3>
+                        </div>
+                        <p class="project-description">
+                            Aplicación web para organizar y gestionar proyectos estudiantiles 
+                            con interfaz intuitiva y persistencia de datos.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                        <a href="#" class="project-link">Ver en GitHub →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🤖</div>
+                            <h3 class="project-title">Bot de Discord</h3>
+                        </div>
+                        <p class="project-description">
+                            Bot automatizado con comandos personalizados para gestionar servidores de Discord 
+                            y mejorar la experiencia de los usuarios.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Discord.py</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <a href="#" class="project-link">Ver en GitHub →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🎬</div>
+                            <h3 class="project-title">Página Web Multimedia</h3>
+                        </div>
+                        <p class="project-description">
+                            Página web realizada para la asignatura de Multimedia: reproductor de vídeos
+                            (YouTube y archivos locales) y sistema de recomendación de películas con filtros
+                            de búsqueda. Desplegada con GitHub Pages.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                        <a href="https://github.com/SergioCarmonaPovedano/Videoclub-Multimedia" class="project-link" target="_blank" rel="noopener">Ver proyecto →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Habilidades Técnicas -->
+        <section class="portfolio-section" id="skills">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Carrusel de tecnologías (iconos en movimiento) -->
+                <div class="tech-carousel" aria-hidden="true">
+                    <div class="carousel-track">
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:java"></span><span>Java</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:javascript"></span><span>JavaScript</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:python"></span><span>Python</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:mysql"></span><span>SQL</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:html5"></span><span>HTML/CSS</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:bootstrap"></span><span>Bootstrap</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:react"></span><span>React</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:mysql"></span><span>MySQL</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="simple-icons:github"></span><span>GitHub</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="simple-icons:visualstudiocode"></span><span>VS Code</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:wordpress"></span><span>WordPress</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:docker"></span><span>Docker</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="simple-icons:github"></span><span>GitHub Desktop</span></span>
+                        <span class="tech-item"><span>Bizagi Modeler</span></span>
+                        <span class="tech-item"><span>Bizagi Studio</span></span>
+                        <span class="tech-item"><span>Logisim</span></span>
+                        <!-- Repetición para bucle infinito suave -->
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:java"></span><span>Java</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:javascript"></span><span>JavaScript</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:python"></span><span>Python</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:mysql"></span><span>SQL</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:html5"></span><span>HTML/CSS</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:bootstrap"></span><span>Bootstrap</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:react"></span><span>React</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:mysql"></span><span>MySQL</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="simple-icons:github"></span><span>GitHub</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="simple-icons:visualstudiocode"></span><span>VS Code</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:wordpress"></span><span>WordPress</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="devicon:docker"></span><span>Docker</span></span>
+                        <span class="tech-item"><span class="iconify" data-icon="simple-icons:github"></span><span>GitHub Desktop</span></span>
+                        <span class="tech-item"><span>Bizagi Modeler</span></span>
+                        <span class="tech-item"><span>Bizagi Studio</span></span>
+                        <span class="tech-item"><span>Logisim</span></span>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">💻 Lenguajes</h3>
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:java"></span></span><span class="skill-name">Java</span></span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:javascript"></span></span><span class="skill-name">JavaScript</span></span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:python"></span></span><span class="skill-name">Python</span></span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="70">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:mysql"></span></span><span class="skill-name">SQL</span></span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">🎨 Frontend</h3>
+                        <div class="skill-item" data-percent="90">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:html5"></span></span><span class="skill-name">HTML/CSS</span></span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:bootstrap"></span></span><span class="skill-name">Bootstrap</span></span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="60">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:react"></span></span><span class="skill-name">React</span></span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">🛠️ Herramientas</h3>
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:git"></span></span><span class="skill-name">Git & GitHub</span></span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="90">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="simple-icons:visualstudiocode"></span></span><span class="skill-name">VS Code</span></span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <div class="skill-header">
+                                <span class="skill-title"><span class="skill-icon"><span class="iconify" data-icon="devicon:mysql"></span></span><span class="skill-name">MySQL</span></span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Contacto -->
+        <section class="portfolio-section contact-section" id="contact">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2 class="section-title">¿Hablamos?</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p class="contact-intro">
+                            Estoy abierto a colaborar en proyectos, prácticas o simplemente charlar sobre tecnología.
+                        </p>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <form class="contact-form" action="https://formspree.io/f/xzdbzrpn" method="POST">
+                            <p class="form-note">Completa el formulario y te responderé lo antes posible.</p>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" name="_subject" placeholder="Motivo de contacto">
+                            </div>
+                            <div class="form-field">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Cuéntame en qué puedo ayudarte" required></textarea>
+                            </div>
+                            <!-- Campos ocultos para Formspree -->
+                            <input type="hidden" name="_replyto" value="">
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- Sustituye 'your-form-id' por tu ID de Formspree -->
+                            <button type="submit" class="contact-submit">Enviar</button>
+                            <p class="form-status" aria-live="polite"></p>
+                            <div class="social-links">
+                                <a href="https://github.com/SergioCarmonaPovedano" target="_blank" class="social-link">
+                                    <span class="social-icon"><span class="iconify" data-icon="simple-icons:github"></span></span>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sergio-carmona-povedano-0116883a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+                                    <span class="social-icon"><span class="iconify" data-icon="simple-icons:linkedin"></span></span>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="mailto:scarmona700@gmail.com" class="social-link">
+                                    <span class="social-icon"><span class="iconify" data-icon="mdi:email-outline"></span></span>
+                                    <span>Email</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+        <p>© 2025 Sergio Carmona - Desarrollador de Software</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Script para destacar el menú según la sección activa -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-menu-link');
+            const sections = document.querySelectorAll('.portfolio-section');
+            const skillsSection = document.querySelector('#skills');
+            const skillItems = document.querySelectorAll('#skills .skill-item');
+
+            // Actualizar menú cuando hace scroll
+            window.addEventListener('scroll', () => {
+                let currentSection = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (window.pageYOffset >= sectionTop - 200) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                // Remover clase active de todos los links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Añadir clase active al link actual
+                if (currentSection) {
+                    const activeLink = document.querySelector(`.nav-menu-link[href="#${currentSection}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+
+            // Trigger inicial
+            window.dispatchEvent(new Event('scroll'));
+
+            // Animación de barras de habilidades al entrar en la sección
+            if (skillsSection && skillItems.length) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            skillItems.forEach((item, idx) => {
+                                const bar = item.querySelector('.skill-bar');
+                                const pctEl = item.querySelector('.skill-percentage');
+                                const target = parseInt(item.getAttribute('data-percent'), 10) || 0;
+                                // Evitar animaciones múltiples
+                                if (item.dataset.animated === 'true') return;
+                                item.dataset.animated = 'true';
+
+                                // Stagger
+                                setTimeout(() => {
+                                    // Barra
+                                    if (bar) {
+                                        bar.style.width = `${target}%`;
+                                    }
+                                    // Contador de porcentaje
+                                    if (pctEl) {
+                                        const duration = 900; // ms
+                                        const start = performance.now();
+                                        const animate = (now) => {
+                                            const progress = Math.min((now - start) / duration, 1);
+                                            const current = Math.round(progress * target);
+                                            pctEl.textContent = `${current}%`;
+                                            if (progress < 1) requestAnimationFrame(animate);
+                                        };
+                                        requestAnimationFrame(animate);
+                                    }
+                                }, idx * 120);
+                            });
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.3 });
+                observer.observe(skillsSection);
+            }
+        });
+    </script>
+</body>
+</html>
