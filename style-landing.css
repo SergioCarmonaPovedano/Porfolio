@@ -742,7 +742,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     margin: 0 40px;
 }
@@ -751,12 +751,13 @@ body {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: var(--transition);
-    padding: 10px 16px;
+    padding: 10px 12px;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .nav-menu-link::before {
@@ -807,7 +808,7 @@ body {
 }
 
 .nav-back {
-    color: var(--accent);
+    color: var(--secondary);
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
@@ -816,17 +817,35 @@ body {
     gap: 8px;
     padding: 10px 16px;
     border-radius: 8px;
-    background: var(--accent-light);
+    background: var(--accent);
     border: 2px solid var(--accent);
 }
 
 .nav-back:hover {
-    background: var(--accent);
-    color: white;
+    background: #0052cc;
+    color: var(--secondary);
     transform: translateX(-4px);
 }
 
-/* Contenedor Portfolio */
+/* Botón CV en navegación */
+.nav-cv-btn {
+    color: var(--secondary);
+    background: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid var(--accent);
+}
+
+.nav-cv-btn:hover {
+    background: transparent;
+    color: var(--accent);
+    transform: translateY(-2px);
+}
 .portfolio-container {
     position: relative;
     z-index: 1;
@@ -930,6 +949,62 @@ body {
     margin: 0;
 }
 
+/* Enlaces sociales minimalistas en Sobre Mí */
+.about-social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-link-minimal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-light);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--text-dark);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+}
+
+.social-link-minimal .iconify {
+    width: 20px;
+    height: 20px;
+}
+
+.social-link-minimal:hover {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 102, 255, 0.05));
+    transform: translateY(-3px);
+}
+
+/* Botón Ver CV en Sobre Mí */
+.cv-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: var(--secondary);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+.cv-button:hover {
+    background: transparent;
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 102, 255, 0.2);
+}
+
 @media (max-width: 768px) {
     .about-wrapper {
         grid-template-columns: 1fr;
@@ -1016,6 +1091,58 @@ body {
     font-size: 0.85rem;
     color: var(--text-light);
     line-height: 1.3;
+}
+
+/* Advantages Grid */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.advantage-card {
+    padding: 30px;
+    background: var(--secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.advantage-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 102, 255, 0.12);
+}
+
+.advantage-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+}
+
+.advantage-icon .iconify {
+    width: 50px;
+    height: 50px;
+}
+
+.advantage-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.advantage-description {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Timeline */
@@ -1189,12 +1316,27 @@ body {
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin-top: 40px;
 }
 
-/* Tech Carousel (iconos en movimiento) */
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contenedor de iconos de habilidades */
+.skills-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
 .tech-carousel {
     position: relative;
     overflow: hidden;
@@ -1273,71 +1415,91 @@ body {
     margin-bottom: 25px;
 }
 
-.skill-item {
-    margin-bottom: 20px;
-}
-
-.skill-item:last-child {
-    margin-bottom: 0;
-}
-
-.skill-header {
+/* Contenedor de iconos de habilidades */
+.skills-icons-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+    justify-content: flex-start;
+}
+
+/* Items de iconos con tooltip */
+.skill-icon-item {
+    position: relative;
+    width: 85px;
+    height: 85px;
+    display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    justify-content: center;
+    background: var(--secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
 }
 
-.skill-title {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+.skill-icon-item:hover {
+    transform: translateY(-10px) scale(1.08);
+    border-color: var(--accent);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(0, 102, 255, 0.1));
+    box-shadow: 0 16px 32px rgba(0, 102, 255, 0.25), 0 0 0 1px rgba(0, 102, 255, 0.1);
 }
 
-.skill-icon {
-    font-size: 1.1rem;
+.skill-icon-item .iconify {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
 }
 
-/* Tamaño consistente para Iconify dentro de skills y carrusel */
-.skill-icon .iconify {
-    width: 18px;
-    height: 18px;
+.skill-icon-item:hover .iconify {
+    transform: scale(1.15);
 }
 
+/* Texto para iconos sin logo (como UML) */
+.skill-icon-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+.skill-icon-item:hover .skill-icon-text {
+    transform: scale(1.15);
+    color: var(--text-dark);
+}
+
+/* Tooltip al hacer hover */
+.skill-icon-item::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--text-dark);
+    color: var(--secondary);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.skill-icon-item:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Tamaño consistente para Iconify en carrusel */
 .tech-item .iconify {
     width: 20px;
     height: 20px;
-}
-
-.skill-name {
-    font-weight: 500;
-    color: var(--text-dark);
-    font-size: 0.95rem;
-}
-
-.skill-percentage {
-    font-size: 0.85rem;
-    color: var(--accent);
-    font-weight: 600;
-}
-
-.skill-bar-container {
-    width: 100%;
-    height: 10px;
-    background: var(--bg-light);
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.skill-bar {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent), #0052cc);
-    border-radius: 8px;
-    transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    box-shadow: 0 0 10px rgba(0, 102, 255, 0.4);
-    width: 0; /* inicial: 0, se anima al entrar en vista */
 }
 
 /* Contact Section (pulido y consistente) */
@@ -1506,6 +1668,11 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1563,6 +1730,58 @@ body {
 
     .stats-grid {
         grid-template-columns: 1fr;
+    }
+
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .advantage-card {
+        padding: 20px;
+    }
+
+    .advantage-icon .iconify {
+        width: 40px;
+        height: 40px;
+    }
+
+    .advantage-title {
+        font-size: 1rem;
+    }
+
+    .advantage-description {
+        font-size: 0.9rem;
+    }
+
+    .about-social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cv-button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .skill-icon-item {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-icon-item .iconify {
+        width: 36px;
+        height: 36px;
+    }
+
+    .tech-carousel {
+        margin: 12px 0 24px;
+    }
+
+    .tech-item {
+        font-size: 0.85rem;
+        padding: 6px 12px;
     }
 
     .social-links {
