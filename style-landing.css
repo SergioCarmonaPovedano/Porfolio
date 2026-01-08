@@ -1330,12 +1330,14 @@ body {
 
 /* Contenedor de iconos de habilidades */
 .skills-icons-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(85px, max-content));
     gap: 20px;
     padding: 10px 0;
     justify-content: center;
     align-items: center;
+    width: auto;
+    margin: 0 auto;
 }
 .tech-carousel {
     position: relative;
@@ -1387,6 +1389,12 @@ body {
     font-size: 0.95rem;
 }
 
+.tech-item-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 @keyframes techScroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
@@ -1402,6 +1410,7 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 12px;
     transition: var(--transition);
+    overflow: visible;
 }
 
 .skill-category:hover {
@@ -1417,11 +1426,14 @@ body {
 
 /* Contenedor de iconos de habilidades */
 .skills-icons-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(85px, max-content));
+    gap: 20px;
     padding: 10px 0;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
 }
 
 /* Items de iconos con tooltip */
@@ -1439,6 +1451,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     flex-shrink: 0;
+    z-index: 1;
 }
 
 .skill-icon-item:hover {
@@ -1452,6 +1465,33 @@ body {
     width: 50px;
     height: 50px;
     transition: all 0.3s ease;
+}
+
+/* Imagen para iconos personalizados en PNG */
+.skill-icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.skill-icon-img--wide {
+    width: 64px;
+    height: 64px;
+}
+
+.skill-icon-img--xl {
+    width: 72px;
+    height: 72px;
+}
+
+.skill-icon-img--lg {
+    width: 58px;
+    height: 58px;
+}
+
+.skill-icon-item:hover .skill-icon-img {
+    transform: scale(1.15);
 }
 
 .skill-icon-item:hover .iconify {
@@ -1488,7 +1528,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-    z-index: 10;
+    z-index: 99999;
 }
 
 .skill-icon-item:hover::after {
